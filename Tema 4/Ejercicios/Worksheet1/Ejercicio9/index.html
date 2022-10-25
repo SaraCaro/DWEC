@@ -1,0 +1,61 @@
+<!-- <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio9</title>
+    <script>
+        function startDrag(e) {
+            if (e.target) {
+            targ = e.target;
+            } else {
+            targ = e.srcElement;
+        }
+
+        offsetX = e.clientX;
+        offsetY = e.clientY;
+
+
+            if (!targ.style.left) {
+                targ.style.left = "0px";
+            }
+            if (!targ.style.top) {
+                targ.style.top = "0px";
+            }
+
+
+        coordX = parseInt(targ.style.left);
+        coordY = parseInt(targ.style.top);
+        drag = true;
+
+
+        document.onmousemove = dragImg;
+        return false;
+        }
+
+    function dragImg(e) {
+    if (!drag) {
+        return false;
+    }
+
+        targ.style.left = coordX + e.clientX - offsetX + "px";
+        targ.style.top = coordY + e.clientY - offsetY + "px";
+        return false;
+        }
+
+    function stopDrag() {
+    drag = false;
+    }
+
+    window.onload = () => {
+    document.onmousedown = startDrag;
+    document.onmouseup = stopDrag;
+    };
+    </script>
+</head>
+<body>
+    <img src="rosas.jpg"/>
+
+</body>
+</html> -->
