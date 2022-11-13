@@ -9,13 +9,16 @@ var appendSeconds = document.getElementById("seconds");
 var Interval ;
 var images = [
   "playlist.jpg",
-  "foto14.jpg"
+  "foto14.jpg",
+  "foto3.jpg",
+  "foto10.jpg",
+  "hiphop.jpg"
 ];
 
-var clone = images.slice(0); // duplicate array
-var cards = images.concat(clone); // merge to arrays 
+var clone = images.slice(0); 
+var cards = images.concat(clone); 
 
-// Shufffel function
+
 function shuffle(o){
   for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i],   o[i] = o[j], o[j] = x);
   return o;

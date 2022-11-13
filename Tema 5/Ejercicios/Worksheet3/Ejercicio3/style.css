@@ -95,16 +95,3 @@ button:hover {
   position: relative;
 	transform: rotateY(0deg);
 }
-
-/* Icons */
-/* $cards: sass, gulp, grunt, git, css;
-       
-$card in $cards  {
-
-  .correct[data-item="#{$card}"],
-  .flipped[data-item="#{$card}"]{
-    background:url("https://cathydutton.co.uk/images/tech/#{$card}.jpg") left center no-repeat #fff;
-    background-size: contain;
-  }
-
-} */
