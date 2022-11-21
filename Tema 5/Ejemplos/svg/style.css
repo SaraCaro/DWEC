@@ -1,0 +1,13 @@
+body{
+    text-align: center;
+}
+
+svg{
+    background-color: #324759;
+}
+
+#puntuacion{
+    display: flex;
+    gap: 20%;
+    justify-content: center;
+}

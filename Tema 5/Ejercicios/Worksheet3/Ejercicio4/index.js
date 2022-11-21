@@ -17,6 +17,7 @@ form.addEventListener('submit', (event) => {
     li.appendChild(span);
     input.value = '';
 
+
     let deleteButton = document.createElement('button');
     let changeItem = document.createElement('button');
     deleteButton.innerHTML = 'X';
@@ -42,6 +43,11 @@ form.addEventListener('submit', (event) => {
             span.textContent = userValue;
         });
     }
+
+    for(i = 0; i < list.children.length; i++) {
+        localStorage.setItem('linea ' + i, list.children[i].textContent);
+    }
+
 });
 
 
@@ -50,3 +56,4 @@ clearItems.addEventListener('click', () => {
         list.removeChild(list.lastChild);
     }
 });
+
