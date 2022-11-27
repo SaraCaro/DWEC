@@ -1,0 +1,29 @@
+<correos>
+    <correo>
+        <remitente>saracaro@gmail.com</remitente>
+        <destinatario>pedrito@gmail.com</destinatario>
+        <asunto>Prueba</asunto>
+        <cuerpo>Esto es una prueba</cuerpo>
+    </correo>
+
+    <correo>
+        <remitente>pedrito@gmail.com</remitente>
+        <destinatario>luisiño@gmail.com</destinatario>
+        <asunto>Ejercicios</asunto>
+        <cuerpo>Toma te los dejo</cuerpo>
+    </correo>
+
+    <correo>
+        <remitente>alvaro@gmail.com</remitente>
+        <destinatario>davis@gmail.com</destinatario>
+        <asunto>Fotos</asunto>
+        <cuerpo>Esto es pa ti</cuerpo>
+    </correo>
+
+    <correo>
+        <remitente>omar@gmail.com</remitente>
+        <destinatario>jose@gmail.com</destinatario>
+        <asunto>Examen</asunto>
+        <cuerpo>Este es mi examen</cuerpo>
+    </correo>
+</correos>
