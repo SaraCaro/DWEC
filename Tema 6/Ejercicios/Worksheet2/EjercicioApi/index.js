@@ -1,7 +1,6 @@
 window.onload = () => {
     document.getElementById("boton").addEventListener("click", nuevaPagina);
 
-    // darle con la tecla enter
     document.getElementById("titulo").addEventListener("keyup", function(event) {
         if (event.keyCode === 13) {
             event.preventDefault();
@@ -29,7 +28,7 @@ function lanzaPeticion(){
         peticion = true;
         httpRequest = new XMLHttpRequest();
 
-        httpRequest.open("GET", `http://www.omdbapi.com/?apikey=e5e01699&s=${document.getElementById("titulo").value}&page=${page}`);
+        httpRequest.open("GET", `https://www.omdbapi.com/?apikey=e5e01699&s=${document.getElementById("titulo").value}&page=${page}`);
         httpRequest.onreadystatechange = trataRespuesta;
         httpRequest.send();
         page ++;

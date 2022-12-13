@@ -41,6 +41,12 @@ p{
     display: inline;
 }
 
+#container>div p{
+    font-size: 1.2em;
+    display: inline;
+    color: gray;
+}
+
 #container>div i{
    margin-right: 20px;
 }
@@ -66,7 +72,15 @@ i.fa-check-circle{
     color: lightgreen;
 }
 
-button#low,#normal,#high{
+/* button#low,#normal,#high{
+    background-color: gray;
+} */
+
+.selected{
+    background-color: green;
+}
+
+.not-selected{
     background-color: gray;
 }
 
