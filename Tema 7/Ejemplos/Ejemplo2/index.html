@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Viajes</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <button :disabled="permitirAnadirEntrada" @click="cambiarVisibilidad()">Ver Texto Entradas</button>
+        <div v-for="entrada in entradasDeEspana" v-bind:id="entrada.codigoArt">
+                <h2>{{entrada.titulo}}</h2>
+                <p v-if="verEntrada">{{entrada.texto}}</p>
+                <p v-else>Pulsa Botón si quieres ver el texto</p>
+                <a :href="entrada.url" target="_blank">Más información</a>
+        </div>
+        <h3>Actualmente tenemos {{muestraNumArticulos()}} articulos</h3>
+        <!-- <h3>En nuestro blog hay {{entradasDeEspana}} articulos de España</h3> -->
+    </div>
+    <script src="index.js">
+    </script>
+</body>
+</html>

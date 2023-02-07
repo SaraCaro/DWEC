@@ -1,0 +1,10 @@
+
+<p>Componente cuerpo</p>
+
+<h2 *ngIf="!datosAMostrar.length; else BLOQUE_ELSE">No tengo datos</h2>
+<ng-template #BLOQUE_ELSE>Lista Datos</ng-template>
+
+<ul> 
+    <li *ngFor="let dato of datosAMostrar">{{dato}}</li>
+</ul>
+

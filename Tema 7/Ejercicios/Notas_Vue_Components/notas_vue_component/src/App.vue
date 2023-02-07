@@ -2,7 +2,9 @@
 import cabecera from './components/header.vue'
 import nota from './components/nota.vue'
 import pie from './components/footer.vue'
+import registro from './components/registro.vue'
 import { ref } from 'vue';
+
 
 var recordatorios = ref([]);
 
@@ -69,7 +71,11 @@ function guardarDatos(){
 </script>
 
 <template>
-  <cabecera @nuevaNota="nuevaNota" @filtrarPorPalabra="palabraFiltrada"></cabecera>
+  <cabecera @nuevaNota="nuevaNota" @filtrarPorPalabra="palabraFiltrada">
+    <router-link to="/registro"></router-link>
+    </cabecera>
+    <registro></registro>
+    <router-link to="/privado">area</router-link>
     <hr>
     <p id="texto-tareas"><i class="fa-solid fa-chart-column"></i> <span id="pendientes">{{pendientes}}</span> tareas pendientes de un total de <span id="total">{{totalTareas}}</span>| <span><a href="#" id="borrar" @click="borrarCompletadas()"><i class="fa-solid fa-xmark"></i> Borrar tareas completadas</a></span></p>
     <hr>
